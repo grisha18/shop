@@ -200,6 +200,7 @@
 }
 .main-season__collection__img{
     position: relative;
+    max-width: 1920px;
 }
 .main-season__img__text{
     position: absolute;
@@ -412,27 +413,23 @@
     margin: auto;
     margin-top: 40px;
 }
-.main-shop{
-    display: flex;
-    flex-direction: row;
-}
 .main-shop__img{
     background-image: url("images/main__shop.png");
-    width:  1920px;
+    max-width:  1920px;
     height: 400px;
     background-size: cover;
 }
 .main-shop__block{
     display: flex;
-    flex-direction: column;
-}
+    flex-direction: row;
+    justify-content: space-around;
+} 
 .main-shop__title{
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
-    text-transform: uppercase;
     color: #FFFFFF;
     padding-top: 80px;
 }
@@ -444,8 +441,8 @@
     line-height: 150%;
     color: #FFFFFF;
     padding-top: 40px;
-} 
-.main-shop__category{
+}
+.main-shop__category__title{
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
@@ -453,5 +450,145 @@
     line-height: 32px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 80px;
 }
-
+.main-shop__mailing__title{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+.main-shop__category__collections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 310px; 
+    margin-top: 40px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;  
+    color: #D0D0D0;
+}
+.main-shop__category__collections__one{
+    width: 70px;
+    height: 41px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.main-shop__category__collections__two{
+    width: 98px;
+    height: 41px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.main-shop__category__collections__three{
+    width: 79px;
+    height: 41px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;   
+}
+.main-shop__category__collections__four{
+    width: 164px;
+    height: 41px;
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.main-shop__category__collections__five{
+    width: 91px;
+    height: 41px;   
+    background: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-shop__mailing__text p{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.main-shop__block__buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 37px;
+}
+.main-shop__mailing__btn{
+    width: 210px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.4);
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+.main-shop__mailing__button{
+    width: 140px;
+    height: 41px;
+    background: #0F0F0F;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.footer{
+    max-width: 1920px;
+    height: 50px;
+    background: #0F0F0F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-left__text{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D0D0D0;
+}
+.footer-right__text{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #D0D0D0;
+}
