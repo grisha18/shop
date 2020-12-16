@@ -162,6 +162,9 @@
     justify-content: space-around;
     padding-top: 50px;
 }
+
+
+
 .main-season__block__one,
 .main-season__block__two,
 .main-season__block__three
@@ -169,11 +172,14 @@
     width: 260px;
     height: 325px;
     background: #191B1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-season__block__one img,
 .main-season__block__two img,
 .main-season__block__three img{
-    padding: 55px 23px 0 23px;
+    
 }
 .main-season__wristwatch__names,
 .main-season__wristwatch__price
@@ -357,12 +363,7 @@
     height: 325px;
     background: #191B1C;
 }
-.main-receipts__block__one img,
-.main-receipts__block__two img,
-.main-receipts__block__three img,
-.main-receipts__block__four img{
-    padding: 55px 22px 0 22px;    
-}
+
 .main-receipts__wristwatch__names,
 .main-receipts__wristwatch__price
 {
@@ -594,3 +595,18 @@
     text-decoration-line: underline;
     color: #D0D0D0;
 }
+
+
+@media (max-width: 1670px) {
+    .main-season__block div img{
+           width:  130px;
+    }
+    .main-season__block__one,
+    .main-season__block__two,
+    .main-season__block__three{
+        width: 130px;
+        height: 162px;
+    }
+}
+
+
