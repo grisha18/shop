@@ -59,10 +59,8 @@
     color: #FFFFFF;
 }
 .menu li{
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
 }
-
 .menu{
     height: 100%;
 }
@@ -71,7 +69,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 .menu__list a{
     text-decoration: none;
     color: #969696;
@@ -82,7 +79,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.menu__list li:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.header__phone a:hover{
+    opacity: 0.3;
+    transition: 0.3s;
 }
 .menu__list .active{
     color: #FFFFFF;
@@ -180,24 +189,13 @@
     justify-content: space-around;
     padding-top: 50px;
 }
-
-
-
-.main-season__block__one,
-.main-season__block__two,
-.main-season__block__three
-{
+.main-season__block__one{
     width: 260px;
     height: 325px;
     background: #191B1C;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.main-season__block__one img,
-.main-season__block__two img,
-.main-season__block__three img{
-    
 }
 .main-season__wristwatch__names,
 .main-season__wristwatch__price
@@ -225,7 +223,7 @@
 }
 .main-season__collection__img{
     position: relative;
-    max-width: 1920px;
+    width: 100%;
 }
 .main-season__img__text{
     position: absolute;
@@ -373,10 +371,13 @@
     justify-content: space-around;
     padding-top: 50px;
 }
-.main-receipts__block__one,
-.main-receipts__block__two,
-.main-receipts__block__three,
-.main-receipts__block__four{
+.main-receipts__block__two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.main-receipts__block__one{
     width: 260px;
     height: 325px;
     background: #191B1C;
@@ -384,21 +385,16 @@
     justify-content: center;
     align-items: center;
 }
-
 .main-receipts__item-block{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1em;
 }
-
 .main-receipts__item-block span{
     color: white;
 }
-
-
 .main-receipts__wristwatch__names,
 .main-receipts__wristwatch__price
 {
@@ -630,8 +626,6 @@
     text-decoration-line: underline;
     color: #D0D0D0;
 }
-
-
 @media (max-width: 1670px) {
     .main-season__block div img{
            width:  130px;
@@ -643,5 +637,143 @@
         height: 162px;
     }
 }
-
-
+@media (max-width: 645px){
+    .header__cart{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__logo{
+        width: 52px;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__cart img{
+        width: 12px;
+        height: 12px;
+    }
+    .menu__list li{
+        font-size: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu__list li .active{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu__list .active{
+        width: 55px;
+    }
+    .main__text p{
+        font-size: 10px;
+    }
+}
+@media(max-width: 1118px){
+    .main__season{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-season{
+        max-width: 350px;
+    }
+    .main-season__block__one{
+        width: 100px;
+        height: 150px;
+    }
+}
+@media(max-width: 898px){
+    .main-season__collection__img img{
+        max-width: 350px;
+    }
+    .main-season__img__text{
+        font-size: 20px;
+        position: absolute;
+        left: 70px;
+        top: 150px;
+    }
+    .main-season__img__line{
+        position: absolute;
+        left: 110px;
+        top: 200px;
+    }
+    .main-season__img__btn{
+        position: absolute;
+        left: 90px;
+        top: 220px;
+    }
+}
+@media (max-width: 1150px){
+    .main-collection{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1055px){
+    .main-collection__block{
+        max-width: 350px;
+    }
+}
+@media (max-width: 898px){
+    .main-collection__img img{
+        max-width: 350px;
+    }
+}
+@media(max-width: 1118px){
+    .main-receipts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-receipts__block__one{
+        width: 100px;
+        height: 110px;
+    }
+    .main-receipts__block{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-receipts__block__one img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media(max-width: 385px){
+    .main-receipts__block{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+@media(max-width: 1025px){
+    .main-brands__images img{
+        width: 70px;
+        height: 60px;
+    }
+}
+@media(max-width: 941px){
+    .main-shop__title,
+    .main-shop__text,
+    .main-shop__category__title,
+    .main-shop__category__collections__one,
+    .main-shop__category__collections__two,
+    .main-shop__category__collections__three,
+    .main-shop__category__collections__four,
+    .main-shop__category__collections__five,
+    .main-shop__mailing__title{
+        font-size: 10px;
+    }
+    .main-shop__text p{
+        font-size: 10px;
+    }
+    .main-shop__block__buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 534px){
+    .main-shop__mailing__btn{
+        width: 70px;
+    }
+    .main-shop__mailing__button{
+        width: 100px;
+    }
+}
