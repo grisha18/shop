@@ -266,7 +266,7 @@
     align-items: center;
 }
 .main-collection__img{
-    margin-top: -4px;
+
 }
 .main-collection{
     display: flex;
@@ -275,9 +275,9 @@
 }
 .main-collection__block{
     width: 1040px;
-    height: 600px;
+    min-height: 600px;
     background: #000000;
-    margin-top: -4px;
+    margin: 3em 0;
 }
 .main-collection__block__title{
     font-family: Playfair Display;
@@ -343,10 +343,11 @@
 }
 .main-receipts{
     width: 100%;
-    height: 1289px;
+    min-height: 1289px;
     background: #000000;
-    margin-top: -4px;
 }
+
+
 .main-receipts__title{
     font-family: Playfair Display;
     font-style: normal;
@@ -356,14 +357,17 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 120px;
+    position: relative;
 }
-.main-receipts__line{
+.main-receipts__title::after{
+    content: "";
     width: 120px;
     height: 0px;
     border: 1px solid #FFFFFF;
-    margin: auto;
-    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
 }
 .main-receipts__block{
     display: flex;
@@ -450,13 +454,15 @@
 .main-shop__img{
     background-image: url("images/main__shop.png");
     width:  100%;
-    height: 400px;
+    min-height: 400px;
     background-size: cover;
+    overflow-y: hidden;
 }
 .main-shop__block{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    overflow: hidden;
 } 
 .main-shop__title{
     font-family: Playfair Display;
@@ -467,6 +473,11 @@
     color: #FFFFFF;
     padding-top: 80px;
 }
+
+.main-shop__text{
+    overflow-y: hidden;
+}
+
 .main-shop__text p{
     font-family: PT Sans;
     font-style: normal;
@@ -673,6 +684,10 @@
     .main__season{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
     }
     .main-season{
         max-width: 350px;
@@ -707,6 +722,10 @@
     .main-collection{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 1055px){
@@ -723,6 +742,9 @@
     .main-receipts{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .main-receipts__block__one{
         width: 100px;
